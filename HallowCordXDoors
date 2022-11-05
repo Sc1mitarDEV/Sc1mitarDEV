@@ -1,0 +1,47 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+
+local Window = Library.CreateLib("HallowCord | V1 -Doors Script", "DarkTheme")
+
+local Tab1 = Window:NewTab("Home")
+local Section = Tab1:NewSection("Alpha Version V1 Scripts might be weak...")
+
+Section:NewLabel("Join My Discord Server For More update")
+Section:NewLabel("This script All about doors")
+Section:NewLabel("Made By ! Sc1mitarKARL#8620")
+
+local Tab = Window:NewTab("Change Logs")
+local Section = Tab:NewSection("Changelogs Updates")
+
+Section:NewLabel("Nothing yet")
+
+local Tab = Window:NewTab("Doors (premium)")
+local Section = Tab:NewSection("HydroGen Supported | Might Catch Some Bugs")
+
+Section:NewButton("Avoid Rush/Ambush", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Doors/Script.lua"))()
+      		print("Loaded")
+  	end)
+
+Section:NewButton("Esp Items/Notifier", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/OminousVibes-Exploit/Scripts/main/doors/main.lua"))()
+      		print("Loaded")
+  	end)
+
+Section:NewButton("FullBright | Usefully Dark rooms", "ButtonInfo", function()
+
+    local Light = game:GetService("Lighting")
+
+function dofullbright()
+Light.Ambient = Color3.new(1, 1, 1)
+Light.ColorShift_Bottom = Color3.new(1, 1, 1)
+Light.ColorShift_Top = Color3.new(1, 1, 1)
+end
+
+dofullbright()
+
+Light.LightingChanged:Connect(dofullbright)
+end)
+
+Section:NewButton("Infinite Yield | Lastest", "ButtonInfo", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source', true))()
+end)
