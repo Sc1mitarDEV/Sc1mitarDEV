@@ -27,6 +27,10 @@ Section:NewButton("Esp Items/Notifier", "ButtonInfo", function()
       		print("Loaded")
   	end)
 
+Section:NewButton("Keyboard", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/kC3dAMvt"))()
+  	end)
+
 Section:NewButton("FullBright | Usefully Dark rooms", "ButtonInfo", function()
 
     local Light = game:GetService("Lighting")
