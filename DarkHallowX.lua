@@ -1,6 +1,6 @@
 if game.PlaceId == 6516141723 then
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "DarkHallowX | DOORS 👁️", HidePremium = false, IntroEnabled = false,IntroText = "Doors Supported!",SaveConfig = true, ConfigFolder = "DarkHallowCF"})
+local Window = OrionLib:MakeWindow({Name = "DarkHallowX | DOORS 👁️", HidePremium = false, IntroText = "Doors Supported!",SaveConfig = true, ConfigFolder = "DarkHallowCF"})
 
 local PrivateTab = Window:MakeTab({
 	Name = "(Private features)",
