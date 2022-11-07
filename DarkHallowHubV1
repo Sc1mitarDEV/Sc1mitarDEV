@@ -1,0 +1,25 @@
+local Player = game.Players.LocalPlayer
+
+Player.Chatted:connect(function(chat)
+    if chat:match("Infinte Yield") then
+        loadstring(game:HttpGet(("https://pastebin.com/raw/0zaaDwC9")))()
+    elseif chat:match("/Mod1") then
+    
+     loadstring(game:HttpGet('https://pastebin.com/raw/7vWUy8Yd', true))()
+
+    elseif chat:match("/Mod2") then
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Universal/Lazy_Dex.lua"))()
+
+     elseif chat:match("/Mod3") then
+     
+loadstring(game:HttpGet("https://raw.githubusercontent.com/OminousVibes-Exploit/Scripts/main/doors/main.lua"))()
+
+     elseif chat:match("/Mod4") then
+     
+loadstring(game:HttpGet("https://pastebin.com/raw/1f02EHFU", true))()
+
+     elseif chat:match("/JnPro") then
+     
+loadstring(game:HttpGet("https://raw.githubusercontent.com/JNHHGaming/JN-HH-Gaming-1-Click/main/JN%20HH%20Gaming%201%20Click",true))()
+    end
+end)
