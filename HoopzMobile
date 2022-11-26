@@ -30,8 +30,7 @@ local Tab1Section = Tab1:NewSection("Information / Etc.")
 local Tab2 = Window:NewTab("Hoopz Tab")
 local Tab2Section = Tab2:NewSection("Aimbot | Not Patched")
 
-
-
+Tab1Section:NewLabel("============================================")
 Tab1Section:NewLabel("Released 11/26/22")
 Tab1Section:NewLabel("Made By Sc1Karl")
 Tab1Section:NewLabel("Kavo UI Library by xHeptc u fucktards")
