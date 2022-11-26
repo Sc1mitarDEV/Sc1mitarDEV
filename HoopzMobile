@@ -1,0 +1,41 @@
+local reset = false
+
+pcall(function()
+    if _G.stepped then
+        reset = true
+        _G.stepped:Disconnect()
+        _G.input:Disconnect()
+        _G.charAdded:Disconnect()
+        _G.charAdded = nil
+        _G.stepped = nil
+        _G.input = nil
+        print("RESET")
+    end
+    
+    if not reset then
+        print("LOADED")
+    end
+end)
+
+local plr = game.Players.LocalPlayer
+local uis = game:GetService("UserInputService")
+local rs = game:GetService("RunService")
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Hoopz 🏀 | Magnetic's", "DarkTheme")
+
+local Tab1 = Window:NewTab("Home Tab")
+local Tab1Section = Tab1:NewSection("Information / Etc.")
+
+local Tab2 = Window:NewTab("Hoopz Tab")
+local Tab2Section = Tab2:NewSection("Aimbot | Not Patched")
+
+
+
+Tab1Section:NewLabel("Released 11/26/22")
+Tab1Section:NewLabel("Made By Sc1Karl")
+Tab1Section:NewLabel("Kavo UI Library by xHeptc u fucktards")
+
+Tab2Section:NewButton("Aimbot V2", "OP Aimbot", function()
+    print("Clicked")
+end)
