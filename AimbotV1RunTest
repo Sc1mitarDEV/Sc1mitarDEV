@@ -1,5 +1,3 @@
-local reset = false
-
 pcall(function()
     if _G.stepped then
         reset = true
@@ -9,11 +7,6 @@ pcall(function()
         _G.charAdded = nil
         _G.stepped = nil
         _G.input = nil
-        print("RESET")
-    end
-    
-    if not reset then
-        print("LOADED")
     end
 end)
 
